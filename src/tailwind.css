@@ -11,10 +11,10 @@
   @apply w-full h-2/3 bg-cover rounded-t-lg
 }
 .card-content-text {
-  @apply h-1/3 pt-2 pl-2 rounded-b-lg
+  @apply h-1/3 pt-2 pl-2 rounded-b-lg 
 }
 .card-text-title {
-  @apply font-bold text-xl
+  @apply font-bold text-xl dark:text-white
 }
 .card-text-description {
   @apply text-sm
@@ -22,7 +22,7 @@
 
 
 .h2-style {
-  @apply ml-5 pt-2 pb-2 text-2xl text-red-500 font-bold
+  @apply ml-5 pt-2 pb-2 text-2xl text-red-600 font-bold
 }
 .footer-style-text {
   @apply mt-2 text-gray-400 font-semibold text-sm

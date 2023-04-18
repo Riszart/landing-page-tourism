@@ -1,3 +1,18 @@
+const htmlElement = document.querySelector('html')
+const toggleButton = document.querySelector('#toggle')
+const toggleButtonSm = document.querySelector('#toggle-sm')
+
+const toggleModedark = ()=>{
+  htmlElement.classList.contains('dark')?
+  htmlElement.classList.remove('dark'):
+  htmlElement.classList.add('dark')
+}
+
+toggleButton.addEventListener('click', ()=>toggleModedark())
+toggleButtonSm.addEventListener('click', ()=>toggleModedark())
+
+
+
 function createArticle({place,description,image}, select){
   const landPeru = document.querySelector('#land')
 
@@ -9,8 +24,8 @@ function createArticle({place,description,image}, select){
   divImg.style.backgroundImage = `url(${image})`
   const divText = document.createElement('div')
   divText.classList.add('card-content-text')
-  if(select % 2)divText.classList.add('bg-white')
-  else divText.classList.add('bg-red-300')
+  if(select % 2)divText.classList.add('bg-white','dark:bg-gray-400')
+  else divText.classList.add('bg-red-300','dark:bg-red-900')
 
   const pTitle = document.createElement('p')
   pTitle.classList.add('card-text-title')
@@ -53,3 +68,4 @@ function createArticleWonders({name,description,image},index){
   article.append(h3, p)
   wondersPeru.appendChild(article)
 }
+
