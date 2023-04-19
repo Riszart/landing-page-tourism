@@ -6,9 +6,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         'inicio': "url('./img/peru-belleza.webp')",
-        'lima': "url('./img/lima.jpg')",
-        'machu-pichu': "url(./img/machu-picchu.jpg)",
-        'nazca': "url(./img/lineas-de-nazca.jpg)",
       },
       backgroundColor: theme => ({
         ...theme('colors'),
