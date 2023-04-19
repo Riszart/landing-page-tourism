@@ -46,10 +46,11 @@ function counter(array, string){
   })
 }
 
-function createArticleWonders({name,description,image},index){
+function createArticleWonders({name,description,image,link},index){
   const wondersPeru = document.querySelector('#wonders')
 
   const article = document.createElement('article')
+  article.onclick = ()=>window.open(link,'_blank')
   article.classList.add('article-wonder')
   article.style.backgroundImage = `url(${image})`
 

@@ -32,8 +32,8 @@
   @apply relative h-60 w-10/12 bg-cover rounded-2xl lg:w-full lg:h-full cursor-pointer bg-center before:content-[''] before:hover:bg-black before:block before:h-full before:hover:opacity-50 before:absolute before:w-full
 }
 .article-wonder__h3{
-  @apply mt-3 ml-8 text-2xl font-bold text-red-600 
+  @apply mt-3 ml-8 text-2xl font-bold text-green-400 relative z-30
 }
 .article-wonder__p{
-  @apply mt-2 ml-8 mr-8 text-xl text-gray-950 font-semibold
+  @apply mt-2 ml-8 mr-8 text-sm text-gray-50 font-semibold relative z-30
 }
